@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settingsIten"
+        android:title="Settings"/>
+    <item android:id="@+id/groupChatSettings"
+        android:title="Group Chat"/>
+    <item android:id="@+id/logoutItem"
+        android:title="Logout"/>
+</menu>
