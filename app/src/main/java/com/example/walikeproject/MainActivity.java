@@ -66,16 +66,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.settingsIten:
-                Toast.makeText(this, "Setting Is Clicked", Toast.LENGTH_SHORT).show();
-                break;
-                
-            case R.id.groupChatSettings:
-//                Toast.makeText(this, "Group chat is Clicked ", Toast.LENGTH_SHORT).show();
-                Intent intentGroupChats = new Intent(MainActivity.this, GroupChatActivity.class);
-                startActivity(intentGroupChats);
-                break;
-                
             case R.id.logoutItem:
                 Toast.makeText(this, "See you next Time :)", Toast.LENGTH_SHORT).show();
                 firebaseAuthMain.signOut();

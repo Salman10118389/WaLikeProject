@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766338022846",
+    "firebase_url": "https://walikepro123-default-rtdb.firebaseio.com",
+    "project_id": "walikepro123",
+    "storage_bucket": "walikepro123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766338022846:android:fbe996c9cea3470d72cdef",
+        "android_client_info": {
+          "package_name": "com.example.walikeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766338022846-2jb27681aqk9hoe2s7es22cfu6qdjq9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.walikeproject",
+            "certificate_hash": "50794e330911a167afe322b5f6d28ddc2cb31f76"
+          }
+        },
+        {
+          "client_id": "766338022846-2h5vu635k2ob7fphau7c21eiata61gi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpqJMBATxU-lY2Mcdvb19hzxj23xgqDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766338022846-2h5vu635k2ob7fphau7c21eiata61gi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -54,26 +54,27 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder>{
         holder.userName.setText(userName);
         holder.lastMessage.setText(lastMessage);
 
-        FirebaseDatabase.getInstance().getReference()
-                        .child("chats")
-                        .child(FirebaseAuth.getInstance().getUid() + user.getUserId())
-                        .orderByChild("timestamp")
-                        .limitToLast(1)
-                                                .addListenerForSingleValueEvent(new ValueEventListener() {
-                                                    @Override
-                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                        if (snapshot.hasChildren()){
-                                                            for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                                holder.lastMessage.setText(dataSnapshot.child("messages").getValue().toString());
-                                                            }
-                                                        }
-                                                    }
-
-                                                    @Override
-                                                    public void onCancelled(@NonNull DatabaseError error) {
-
-                                                    }
-                                                });
+//        FirebaseDatabase.getInstance().getReference()
+//                        .child("chats"
+//                        )
+//                        .child(FirebaseAuth.getInstance().getUid() + user.getUserId())
+//                        .orderByChild("timestamp")
+//                        .limitToLast(1)
+//                                                .addListenerForSingleValueEvent(new ValueEventListener() {
+//                                                    @Override
+//                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                                                        if (snapshot.hasChildren()){
+//                                                            for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+//                                                                holder.lastMessage.setText(dataSnapshot.child("messages").getValue().toString());
+//                                                            }
+//                                                        }
+//                                                    }
+//
+//                                                    @Override
+//                                                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                                                    }
+//                                                });
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
